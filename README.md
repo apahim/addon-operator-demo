@@ -20,6 +20,7 @@ spec:
     key2: value2
     key3: value3
   monitoringStack: true
+  upgradeSchedule: 0 10 * * 1-5
 ```
 
 Example controller logs:
