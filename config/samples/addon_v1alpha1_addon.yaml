@@ -1,0 +1,10 @@
+apiVersion: addon.example.com/v1alpha1
+kind: AddOn
+metadata:
+  name: prow-operator
+  namespace: addon-operator
+spec:
+  targetNamespace: prow-operator
+  catalogSourceImage: quay.io/osd-addons/prow-operator-index:71ac363
+  operatorGroupInstallMode: SingleNamespace
+  subscriptionChannel: alpha
