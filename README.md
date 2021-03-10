@@ -34,4 +34,6 @@ INFO controllers.AddOn Creating the OperatorGroup {"addon": "addon-operator/prow
 INFO controllers.AddOn Creating the Subscription {"addon": "addon-operator/prow-operator"}
 INFO controllers.AddOn Creating the Params ConfigMap {"addon": "addon-operator/prow-operator"}
 INFO controllers.AddOn Creating the PD and DMS Secret {"addon": "addon-operator/prow-operator"}
+...
+INFO controllers.AddOn CSV approval pending. Waiting for the next upgrade time slot {"addon": "addon-operator/prow-operator"}
 ```
