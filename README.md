@@ -21,6 +21,7 @@ spec:
     key3: value3
   monitoringStack: true
   upgradeSchedule: 0 10 * * 1-5
+  delete: false
 ```
 
 Example controller logs:
