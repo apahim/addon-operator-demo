@@ -6,12 +6,11 @@
 ## Installing
 
 
-```yaml
+```
 apiVersion: addon.example.com/v1alpha1
 kind: AddOn
 metadata:
   name: prow-operator
-  namespace: addon-operator
 spec:
   targetNamespace: prow-operator
   catalogSourceImage: quay.io/osd-addons/prow-operator-index:71ac363
@@ -29,13 +28,13 @@ spec:
 Logs:
 
 ```
-INFO controllers.AddOn Monitoring Stack already deployed {"addon": "addon-operator/prow-operator"}
-INFO controllers.AddOn Creating the Namespace {"addon": "addon-operator/prow-operator"}
-INFO controllers.AddOn Creating the CatalogSource {"addon": "addon-operator/prow-operator"}
-INFO controllers.AddOn Creating the OperatorGroup {"addon": "addon-operator/prow-operator"}
-INFO controllers.AddOn Creating the Subscription {"addon": "addon-operator/prow-operator"}
-INFO controllers.AddOn Creating the Params ConfigMap {"addon": "addon-operator/prow-operator"}
-INFO controllers.AddOn Creating the PD and DMS Secret {"addon": "addon-operator/prow-operator"}
+INFO controllers.AddOn Monitoring Stack already deployed {"addon": "prow-operator"}
+INFO controllers.AddOn Creating the Namespace {"addon": "prow-operator"}
+INFO controllers.AddOn Creating the CatalogSource {"addon": "prow-operator"}
+INFO controllers.AddOn Creating the OperatorGroup {"addon": "prow-operator"}
+INFO controllers.AddOn Creating the Subscription {"addon": "prow-operator"}
+INFO controllers.AddOn Creating the Params ConfigMap {"addon": "prow-operator"}
+INFO controllers.AddOn Creating the PD and DMS Secret {"addon": "prow-operator"}
 ```
 
 ## Updating
@@ -45,7 +44,6 @@ apiVersion: addon.example.com/v1alpha1
 kind: AddOn
 metadata:
   name: prow-operator
-  namespace: addon-operator
 spec:
   targetNamespace: prow-operator
 - catalogSourceImage: quay.io/osd-addons/prow-operator-index:71ac363
@@ -64,10 +62,10 @@ spec:
 Logs:
 
 ```
-INFO controllers.AddOn Updating CatalogSource {"addon": "addon-operator/prow-operator"}
-INFO controllers.AddOn Upgrade pending. Waiting for the next upgrade time slot {"addon": "addon-operator/prow-operator"}
+INFO controllers.AddOn Updating CatalogSource {"addon": "prow-operator"}
+INFO controllers.AddOn Upgrade pending. Waiting for the next upgrade time slot {"addon": "prow-operator"}
 ...
-INFO controllers.AddOn Approving pending upgrade {"addon": "addon-operator/prow-operator"}
+INFO controllers.AddOn Approving pending upgrade {"addon": "prow-operator"}
 ```
 
 ## Deleting
@@ -77,7 +75,6 @@ apiVersion: addon.example.com/v1alpha1
 kind: AddOn
 metadata:
   name: prow-operator
-  namespace: addon-operator
 spec:
   targetNamespace: prow-operator
   catalogSourceImage: quay.io/osd-addons/prow-operator-index:ae6c761
@@ -96,10 +93,10 @@ spec:
 Logs:
 
 ```
-INFO controllers.AddOn Deleting the Subscription {"addon": "addon-operator/prow-operator"}
-INFO controllers.AddOn Deleting the CatalogSource {"addon": "addon-operator/prow-operator"}
-INFO controllers.AddOn Deleting the OperatorGroup {"addon": "addon-operator/prow-operator"}
-INFO controllers.AddOn Deleting the PD and DMS Secret {"addon": "addon-operator/prow-operator"}
-INFO controllers.AddOn Deleting the Params ConfigMap {"addon": "addon-operator/prow-operator"}
-INFO controllers.AddOn Deleting the Namespace {"addon": "addon-operator/prow-operator"}
+INFO controllers.AddOn Deleting the Subscription {"addon": "prow-operator"}
+INFO controllers.AddOn Deleting the CatalogSource {"addon": "prow-operator"}
+INFO controllers.AddOn Deleting the OperatorGroup {"addon": "prow-operator"}
+INFO controllers.AddOn Deleting the PD and DMS Secret {"addon": "prow-operator"}
+INFO controllers.AddOn Deleting the Params ConfigMap {"addon": "prow-operator"}
+INFO controllers.AddOn Deleting the Namespace {"addon": "prow-operator"}
 ```
