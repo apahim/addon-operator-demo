@@ -3,7 +3,7 @@
 ![](docs/images/addon-operator.png)
 
 
-Installing AddOn:
+## Installing
 
 
 ```yaml
@@ -38,7 +38,7 @@ INFO controllers.AddOn Creating the Params ConfigMap {"addon": "addon-operator/p
 INFO controllers.AddOn Creating the PD and DMS Secret {"addon": "addon-operator/prow-operator"}
 ```
 
-Updating Addon:
+## Updating
 
 ```diff
 apiVersion: addon.example.com/v1alpha1
@@ -61,6 +61,8 @@ spec:
   delete: false
 ```
 
+Logs:
+
 ```
 INFO controllers.AddOn Updating CatalogSource {"addon": "addon-operator/prow-operator"}
 INFO controllers.AddOn Upgrade pending. Waiting for the next upgrade time slot {"addon": "addon-operator/prow-operator"}
@@ -68,7 +70,7 @@ INFO controllers.AddOn Upgrade pending. Waiting for the next upgrade time slot {
 INFO controllers.AddOn Approving pending upgrade {"addon": "addon-operator/prow-operator"}
 ```
 
-Updating Addon:
+## Deleting
 
 ```diff
 apiVersion: addon.example.com/v1alpha1
@@ -90,6 +92,8 @@ spec:
 - delete: false
 + delete: true
 ```
+
+Logs:
 
 ```
 INFO controllers.AddOn Deleting the Subscription {"addon": "addon-operator/prow-operator"}
