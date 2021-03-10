@@ -37,4 +37,6 @@ INFO controllers.AddOn Creating the PD and DMS Secret {"addon": "addon-operator/
 ...
 INFO controllers.AddOn Updating CatalogSource {"addon": "addon-operator/prow-operator"}
 INFO controllers.AddOn Upgrade pending. Waiting for the next upgrade time slot {"addon": "addon-operator/prow-operator"}
+...
+INFO controllers.AddOn Approving pending upgrade {"addon": "addon-operator/prow-operator"}
 ```
