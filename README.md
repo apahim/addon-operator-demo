@@ -1,5 +1,7 @@
 # AddOn Operator
 
+**This is a mockup. No real functionality is implemented so far.**
+
 ![](docs/images/addon-operator.png)
 
 
