@@ -56,14 +56,17 @@ spec:
     key3: value3
   monitoringStack: true
   upgradeSchedule: 0 10 * * 1-5
+  openShiftVesions:
+  - 4.6.11
   delete: false
 ```
 
 Logs:
 
 ```
+INFO controllers.AddOn Checking cluster compatibility {"addon": "prow-operator"}
 INFO controllers.AddOn Updating CatalogSource {"addon": "prow-operator"}
-INFO controllers.AddOn Upgrade pending. Waiting for the next upgrade time slot {"addon": "prow-operator"}
+INFO controllers.AddOn OLM upgrade pending approval. Waiting until the next maintenance slot {"addon": "prow-operator"}
 ...
 INFO controllers.AddOn Approving pending upgrade {"addon": "prow-operator"}
 ```
