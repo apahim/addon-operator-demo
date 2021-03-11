@@ -22,12 +22,15 @@ spec:
     key3: value3
   monitoringStack: true
   upgradeSchedule: 0 10 * * 1-5
+  openShiftVesions:
+  - 4.6.11
   delete: false
 ```
 
 Logs:
 
 ```
+INFO controllers.AddOn Checking cluster compatibility {"addon": "prow-operator"}
 INFO controllers.AddOn Monitoring Stack already deployed {"addon": "prow-operator"}
 INFO controllers.AddOn Creating the Namespace {"addon": "prow-operator"}
 INFO controllers.AddOn Creating the CatalogSource {"addon": "prow-operator"}
@@ -89,6 +92,8 @@ spec:
     key3: value3
   monitoringStack: true
   upgradeSchedule: 0 10 * * 1-5
+  openShiftVesions:
+  - 4.6.11
 - delete: false
 + delete: true
 ```
